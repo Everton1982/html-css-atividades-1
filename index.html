@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade New Tab</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <label for="mobile-menu-checkbox" id="mobile-menu-overlay"></label>
+  <input type="checkbox" id="mobile-menu-checkbox">
+
+  <nav role="navigation" class="mobile-menu"> 
+    <label for="mobile-menu-checkbox" id="mobile-menu-btn">
+      <span class="menu-link">X</span>
+    </label>
+    <ul class="button-group">
+      <li class="button"><a href="#resumo">Resumo</a></li>
+      <li class="button"><a href="#dashboard">Dashboard</a></li>
+      <li class="button"><a href="#configuracoes">Configurações</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="./img/logo.svg" alt="logotipo">
+    <p id="control">Controle financeiro</p>
+    <label for="mobile-menu-checkbox" id="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+  </header>
+
+  <div class="escope">
+    <div class="form_items">
+      <h2>Nova transação</h2>
+      <form action="" id="form_data">
+        <div class="box_collumn">
+          <label id="type">Tipo de transação</label>
+          <select name="option" class="option_type">
+            <option>Compra</option>
+            <option>Compra</option>
+            <option>Compra</option>
+          </select>
+        </div>
+        <div class="box_collumn">
+          <label id="product_name">Nome da mercadoria</label>
+          <select name="option" class="product_option">
+            <option>Input</option>
+            <option>Input</option>
+            <option>Input</option>
+          </select>
+        </div class="box_collumn">
+        <div class="box_collumn">
+          <div class="value">
+            <label id="title_val">Valor</label>
+            <input type="text" placeholder="R$ 0,00" id="value">
+          </div>
+        </div>
+        <div class="box_button_submit">
+          <button type="submit" id="submit">Adicionar transação</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <div class="data">
+      <h2 id="transactions">Extrato de transações</h2>
+      <div class="rowTitle">
+        <div></div>
+        <div>
+          <span>
+            Mercadoria
+          </span>
+        </div>
+        <div>
+          <span>
+            Valor
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <span>
+            +
+          </span>
+        </div>
+        <div>
+          <span>
+            Lorem ipsum dolor sit amet consectetur
+          </span>
+        </div>
+        <div>
+          <span>
+            R$ 12.999,99
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <span>
+            -
+          </span>
+        </div>
+        <div>
+          <span>
+            Quis nostrud exercitation
+          </span>
+        </div>
+        <div>
+          <span>
+            R$ 99,99
+          </span>
+        </div>
+      </div>
+      <div class="row" id="borderDouble">
+        <div>
+          <span>
+            +
+          </span>
+        </div>
+        <div>
+          <span>
+            Lorem ipsum
+          </span>
+        </div>
+        <div>
+          <span>
+            R$ 9,99
+          </span>
+        </div>
+      </div>
+      <div id="total" class="row">
+        <div></div>
+        <div>
+          <span>
+            Total
+          </span>
+        </div>
+        <div>
+          <span>
+            R$ 12.909,99
+          </span>
+        </div>
+      </div>
+      <div id="gain" class="row">
+        <div></div>
+        <div></div>
+        <div>
+          <p class="gain">
+            [LUCRO]
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
