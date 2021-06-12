@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atividade New Tab</title>
+  <title>HTML - CSS - atividade 1 - NewTab</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -17,14 +17,14 @@
   <label for="mobile-menu-checkbox" id="mobile-menu-overlay"></label>
   <input type="checkbox" id="mobile-menu-checkbox">
 
-  <nav role="navigation" class="mobile-menu"> 
+  <nav role="navigation" class="mobile-menu">
     <label for="mobile-menu-checkbox" id="mobile-menu-btn">
       <span class="menu-link">X</span>
     </label>
-    <ul class="button-group">
-      <li class="button"><a href="#resumo">Resumo</a></li>
-      <li class="button"><a href="#dashboard">Dashboard</a></li>
-      <li class="button"><a href="#configuracoes">Configurações</a></li>
+    <ul>
+      <li><a href="#resumo">Resumo</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#configuracoes">Configurações</a></li>
     </ul>
   </nav>
 
@@ -34,6 +34,18 @@
     <label for="mobile-menu-checkbox" id="mobile-menu-btn">
       <i class="fas fa-bars"></i>
     </label>
+    <!--
+      Essa é uma das formas variadas de menu com botões usando
+      o display none e block, não necessáriamente precisa ficar com li
+      e button, apenas uma amostra isso.
+    -->
+    <div class="button-group">
+      <div class="box350">
+        <button class="button" id="#resumo">Resumo</button>
+        <button class="button" id="#dashboard">Dashboard</button>
+        <button class="button" id="#configuracoes">Configurações</button>
+      </div>
+    </div>
   </header>
 
   <div class="escope">

@@ -4,12 +4,12 @@
   h2 {
     display: none;
   }
+  .button-group {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-  .button-group {
-    display: block !important;
-  }
   hr {
     display: none;
   }
@@ -17,16 +17,13 @@
     display: flex;
     margin-top: 40px;
   }
-  .button {
-    display: flex !important;
+  .button-group {
+    display: none ;
   }
   #transactions {
     margin-top: 45px;
   }
-  .button-group {
-    display: flex;
-    flex-direction: row;
-  }
+
   .form_items {
     padding: 20px;
     display: flex;
@@ -80,6 +77,40 @@
   .escope {
     margin-top: 40px;
   }
+  #control {
+    width: 300px;
+  }
+  .button-group {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    flex-direction: row-reverse;
+  }
+  .box350 {
+    width: 370px;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .button {
+    border: none;
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #fff;
+    width: 118.66px;
+  }
+  .button:nth-child(2) {
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+  }
   hr {
     display: none;
   }
@@ -130,10 +161,11 @@
   #mobile-menu-btn {
     display: none;
   }
-
-  .mobile-menu > ul > li {
-}
-
+  .data {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -143,6 +175,10 @@
   .escope {
     display: flex;
     justify-content: center;
+  }
+  .button-group {
+    width: 100%;
+    flex-direction: row-reverse;
   }
   .form_items {
     padding: 20px;
